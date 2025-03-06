@@ -1,11 +1,9 @@
 @import url("vendors/swiper.min.css");
 @import url("vendors/simplebar.min.css");
-@import url("vendors/magnific-popup.css");
-@import url("vendors/photoswipe.css");
-@import url("vendors/default-skin.css");
 @import url("../icons/style-custome-icons.css");
 @import url("../icons/feather.css");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&amp;display=swap");
+
 :root {
   --font-family: 'Poppins', sans-serif;
   --font-base-size: 15px;
@@ -3068,9 +3066,7 @@ button:focus {
 }
 
 .review-icon-quote {
-  background: url(https://art-template.ru/vcard4/assets/icons/icon-quote.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url(https://art-template.ru/vcard4/assets/icons/icon-quote.svg) no-repeat center;
   margin: auto 0;
   height: 1.5rem;
   max-width: 5rem;
@@ -3324,4 +3320,3 @@ button:focus {
   border-radius: 0.0625rem;
   height: 100%;
 }
-/*# sourceMappingURL=style.css.map */
