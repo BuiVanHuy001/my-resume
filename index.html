@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="shortcut icon" href="assets/images/favicons/favicon.png" type="image/png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/styles/bootstrap.min.css"/>
     <link rel="stylesheet" type="text/css" href="assets/styles/style.css"/>
 </head>
@@ -17,15 +18,15 @@
                 <div class="sidebar box-outer sticky-column">
                     <div class="sidebar__base-info">
                         <figure class="avatar-box">
-                            <img src="assets/images/my-avatar.png" alt="Bùi Văn Huy">
+                            <img data-aos="zoom-in-up" src="assets/images/my-avatar.png" alt="Bùi Văn Huy">
                         </figure>
                         <div class="text-xl-center">
-                            <h3 class="title title--h3 sidebar__name">Bùi Văn Huy</h3>
-                            <div class="badge">Web developer</div>
+                            <h3 class="title title--h3 sidebar__name" data-aos="fade-right">Bùi Văn Huy</h3>
+                            <div class="badge" data-aos="fade-right">Web developer</div>
                         </div>
                         <button class="btn btn--small btn--icon-right sidebar__btn js-btn-toggle"><span>Show Contacts</span><i class="feathericon-chevron-down"></i></button>
                     </div>
-                    <div class="sidebar__additional-info js-show">
+                    <div data-aos="flip-right" class="sidebar__additional-info js-show">
                         <div class="separation"></div>
                         <ul class="details-info">
                             <li class="details-info__item">
@@ -69,7 +70,7 @@
 
             <div class="col-12 col-md-12 col-xl-9">
                 <div class="box-outer">
-                    <div class="nav-container">
+                    <div class="nav-container" data-aos="fade-left">
                         <ul class="nav">
                             <li class="nav__item"><a class="active" href="#about">About</a></li>
                             <li class="nav__item"><a href="#skills">Skills</a></li>
@@ -78,18 +79,18 @@
                             <li class="nav__item"><a href="#testimonials">Testimonials</a></li>
                         </ul>
                     </div>
-                    <div class="pb-0 pb-sm-2">
+                    <div class="pb-0 pb-sm-2" data-aos="fade-right">
                         <h1 id="about" class="title title--h1 title__separate">About Me</h1>
-                        <p>I am a passionate Web Developer and UI/UX Designer based in Ho Chi Minh city, Viet Nam, with a keen interest in creating user-friendly and visually appealing digital
+                        <p data-aos="flip-left">I am a passionate Web Developer and UI/UX Designer based in Ho Chi Minh city, Viet Nam, with a keen interest in creating user-friendly and visually appealing digital
                             experiences. As an aspiring professional, I enjoy transforming complex problems into simple, elegant, and intuitive solutions.
                         </p>
-                        <p>I specialize in building functional and aesthetically pleasing websites that enhance user experience. My goal is to develop creative and engaging digital products that
+                        <p data-aos="flip-left">I specialize in building functional and aesthetically pleasing websites that enhance user experience. My goal is to develop creative and engaging digital products that
                             effectively communicate brand identity. Eager to learn and grow, I am excited to contribute to innovative projects and collaborate with dynamic teams.
                         </p>
                     </div>
-                    <h2 id="skills" class="title title--h2 mt-3">My Skills</h2>
+                    <h2 id="skills" class="title title--h2 mt-3" data-aos="fade-right">My Skills</h2>
                     <div class="row">
-                        <div class="col-12 col-lg-6">
+                        <div class="col-12 col-lg-6" data-aos="fade-right">
                             <div class="case-item box box--s2 box-inner">
                                 <img class="case-item__icon" src="assets/images/icons/airplay.svg" alt=""/>
                                 <div>
@@ -102,7 +103,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-lg-6">
+                        <div class="col-12 col-lg-6" data-aos="fade-left">
                             <div class="case-item box box--s2 box-inner">
                                 <img class="case-item__icon" src="assets/images/icons/code.svg" alt=""/>
                                 <div>
@@ -116,7 +117,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-lg-6">
+                        <div class="col-12 col-lg-6" data-aos="fade-right">
                             <div class="case-item box box--s2 box-inner">
                                 <img class="case-item__icon" src="assets/images/icons/tool.svg" alt=""/>
                                 <div>
@@ -129,7 +130,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-lg-6">
+                        <div class="col-12 col-lg-6" data-aos="fade-left">
                             <div class="case-item box box--s2 box-inner">
                                 <img class="case-item__icon" src="assets/images/icons/user.svg" alt=""/>
                                 <div>
@@ -143,8 +144,8 @@
                             </div>
                         </div>
                     </div>
-                    <h2 id="education" class="title title--h2"><span class="box box--s2 icon-box"><img src="assets/images/icons/book-open.svg"  alt=""/></span>Education</h2>
-                    <div class="timeline">
+                    <h2 id="education" data-aos="fade-right" class="title title--h2"><span class="box box--s2 icon-box"><img src="assets/images/icons/book-open.svg" alt=""/></span>Education</h2>
+                    <div data-aos="fade-right" class="timeline">
                         <article class="timeline__item">
                             <h5 class="title title--h4 timeline__title">Viet My College</h5>
                             <span class="timeline__period">2023 — 2026</span>
@@ -156,8 +157,8 @@
                             <p class="timeline__description">PHP developer.</p>
                         </article>
                     </div>
-                    <h2 class="title title--h2"><span class="box box--s2 icon-box"><img src="assets/images/icons/book.svg"  alt=""/></span>Certifications</h2>
-                    <div class="timeline">
+                    <h2 data-aos="fade-right" class="title title--h2"><span class="box box--s2 icon-box"><img src="assets/images/icons/book.svg" alt=""/></span>Certifications</h2>
+                    <div data-aos="fade-right" class="timeline">
                         <article class="timeline__item">
                             <h5 class="title title--h4 timeline__title">IELTS Band 6.5</h5>
                             <span class="timeline__period">2025 — 2027</span>
@@ -174,10 +175,10 @@
                             <p class="timeline__description">Verify.</p>
                         </article>
                     </div>
-                    <h2 id="project" class="title title--h2 mt-3">Personal Projects</h2>
+                    <h2 data-aos="fade-left" id="project" class="title title--h2 mt-3">Personal Projects</h2>
                     <div class="gallery-grid js-masonry js-filter-container">
                         <div class="gutter-sizer"></div>
-                        <div class="gallery-grid__item">
+                        <div data-aos="flip-up" class="gallery-grid__item">
                             <a href="#" data-bs-toggle="modal" data-bs-target="#project_1">
                                 <div class="gallery-grid__image-wrap">
                                     <img class="gallery-grid__image cover lazyload" src="assets/images/projects/project-1.webp" alt=""/>
@@ -189,7 +190,7 @@
                             </a>
                         </div>
 
-                        <div class="gallery-grid__item">
+                        <div data-aos="flip-up" class="gallery-grid__item">
                             <a href="#" data-bs-toggle="modal" data-bs-target="#project_2">
                                 <div class="gallery-grid__image-wrap">
                                     <img class="gallery-grid__image cover lazyload" src="assets/images/projects/project-2.webp" alt=""/>
@@ -201,7 +202,7 @@
                             </a>
                         </div>
 
-                        <div class="gallery-grid__item">
+                        <div data-aos="flip-up" class="gallery-grid__item">
                             <a href="#" data-bs-toggle="modal" data-bs-target="#project_3">
                                 <div class="gallery-grid__image-wrap">
                                     <img class="gallery-grid__image cover lazyload" src="assets/images/projects/project-3.webp" alt=""/>
@@ -213,7 +214,7 @@
                             </a>
                         </div>
 
-                        <div class="gallery-grid__item">
+                        <div data-aos="flip-up" class="gallery-grid__item">
                             <a target="_blank" href="https://github.com/BuiVanHuy001/Multikart-eCommerce/tree/main" data-bs-toggle="modal" data-bs-target="#project_4">
                                 <div class="gallery-grid__image-wrap">
                                     <img class="gallery-grid__image cover lazyload" src="assets/images/projects/project-4.webp" alt=""/>
@@ -225,7 +226,7 @@
                             </a>
                         </div>
 
-                        <div class="gallery-grid__item">
+                        <div data-aos="flip-up" class="gallery-grid__item">
                             <a href="#" data-bs-toggle="modal" data-bs-target="#project_5">
                                 <div class="gallery-grid__image-wrap">
                                     <img class="gallery-grid__image cover lazyload" src="assets/images/projects/project-5.webp" alt=""/>
@@ -237,7 +238,7 @@
                             </a>
                         </div>
 
-                        <div class="gallery-grid__item">
+                        <div data-aos="flip-up" class="gallery-grid__item">
                             <a href="#" data-bs-toggle="modal" data-bs-target="#project_6">
                                 <div class="gallery-grid__image-wrap">
                                     <img class="gallery-grid__image cover lazyload" src="assets/images/projects/project-6.webp" alt=""/>
@@ -251,7 +252,7 @@
                     </div>
 
                     <div id="testimonials" class="testimonials">
-                        <h2 class="title title--h2 mt-3">Testimonials</h2>
+                        <h2 data-aos="fade-right" class="title title--h2 mt-3">Testimonials</h2>
                         <div class="swiper-container js-carousel-review">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide review-item box box--s2 box-inner js-open-review">
@@ -696,6 +697,7 @@
 </main>
 <div class="back-to-top"></div>
 <script src="assets/js/jquery-3.4.1.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="assets/js/plugins.min.js"></script>
 <script src="assets/js/main.js"></script>
 </body>

@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
     'use strict';
-
+    AOS.init();
     document.querySelectorAll('.nav__item a').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
