@@ -1,9 +1,8 @@
-import 'https://code.jquery.com/jquery-3.7.1.js'
-import 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js';
-import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
-import 'https://cdn.datatables.net/v/dt/dt-2.2.2/datatables.min.js';
+import '../../node_modules/jquery/dist/jquery.min.js';
+import '../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js';
 
 
+AOS.init();
 (function () {
     var A, M;
     A = window.jQuery, M = A(window), A.fn.stick_in_parent = function (t) {
@@ -63,10 +62,7 @@ import 'https://cdn.datatables.net/v/dt/dt-2.2.2/datatables.min.js';
     }
 }).call(this);
 $(document).ready(function () {
-
     'use strict';
-    AOS.init();
-    new DataTable('#example');
     document.querySelectorAll('.nav__item a').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -85,18 +81,28 @@ $(document).ready(function () {
         });
     });
 
-    let isDark = true;
-    $('#bs_theme_toggle').on('click', function () {
-        if (isDark) {
-            $('html').removeClass('dark').addClass('light').attr('data-bs-theme', 'light');
-            $('#theme_icon').removeClass('bi-sun').addClass('bi-moon');
-            isDark = false;
-        } else {
-            $('html').removeClass('light').addClass('dark').attr('data-bs-theme', 'dark');
-            $('#theme_icon').removeClass('bi-moon').addClass('bi-sun');
-            isDark = true;
-        }
-    });
+let isDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+if (isDark) {
+    $('html').addClass('dark').attr('data-bs-theme', 'dark');
+    $('#theme_icon').addClass('bi-sun');
+} else {
+    $('html').addClass('light').attr('data-bs-theme', 'light');
+    $('#theme_icon').addClass('bi-moon');
+}
+
+$('#bs_theme_toggle').on('click', function () {
+    if (isDark) {
+        $('html').removeClass('dark').addClass('light').attr('data-bs-theme', 'light');
+        $('#theme_icon').removeClass('bi-sun').addClass('bi-moon');
+        localStorage.setItem('theme', 'light');
+        isDark = false;
+    } else {
+        $('html').removeClass('light').addClass('dark').attr('data-bs-theme', 'dark');
+        $('#theme_icon').removeClass('bi-moon').addClass('bi-sun');
+        localStorage.setItem('theme', 'dark');
+        isDark = true;
+    }
+});
 
     var isMobile = false;
     if (/Android|webOS|iPhone|iPod|iPad|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
@@ -193,5 +199,4 @@ $(document).ready(function () {
     }
 
     scrollToTop();
-})
-;
+});
