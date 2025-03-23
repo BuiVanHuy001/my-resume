@@ -1,7 +1,7 @@
-@import url('../../node_modules/bootstrap/dist/css/bootstrap.min.css');
-@import url('../../node_modules/bootstrap-icons/font/bootstrap-icons.css');
-@import url('../../node_modules/aos/dist/aos.css');
-@import url('../../node_modules/swiper/swiper-bundle.min.css');
+@import url('../node_modules/bootstrap/dist/css/bootstrap.min.css');
+@import url('../node_modules/bootstrap-icons/font/bootstrap-icons.css');
+@import url('../node_modules/aos/dist/aos.css');
+@import url('../node_modules/swiper/swiper-bundle.min.css');
 
 @font-face {
     font-family: 'Poppins';
