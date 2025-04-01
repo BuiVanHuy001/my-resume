@@ -5,20 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e0ac908d-c85c-4ba3-993c-f0c2fb8c93d2" name="Changes" comment="Add meta tags for SEO and improve iframe loading">
-      <change afterPath="$PROJECT_DIR$/assets/js/data.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/renderData.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/theme-toggle.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/BuiVanHuy_CV.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/assets/files/BuiVanHuy_CV.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/background.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/node_modules/aos/dist/aos.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/node_modules/aos/dist/aos.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/node_modules/bootstrap/dist/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/node_modules/bootstrap/dist/css/bootstrap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/node_modules/bootstrap/dist/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/node_modules/bootstrap/dist/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/favicons/my-avatar.ico" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,6 +119,11 @@
       <workItem from="1742742495379" duration="3854000" />
       <workItem from="1742804362454" duration="1444000" />
       <workItem from="1742865170158" duration="4507000" />
+      <workItem from="1742872429972" duration="470000" />
+      <workItem from="1742872937407" duration="98000" />
+      <workItem from="1743092424027" duration="28000" />
+      <workItem from="1743478142331" duration="699000" />
+      <workItem from="1743521956018" duration="626000" />
     </task>
     <task id="LOCAL-00001" summary="Add meta tags for SEO and improve iframe loading">
       <option name="closed" value="true" />

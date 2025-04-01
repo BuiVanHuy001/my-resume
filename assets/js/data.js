@@ -53,18 +53,22 @@ export const aboutMe = [
 export const skills = [
     {
         name: 'Front-End',
+        icon: 'bi-cast',
         technical: ['ReactJS (Redux, Hooks, SSG, Router, Axios)', 'Bootstrap, TailwindCSS', 'Webpack, Vite'],
     },
     {
         name: 'Back-End',
+        icon: 'bi bi-code-slash',
         technical: ['Laravel', 'RESTful APIs', 'WebSocket', 'MYSQL, MongoDB'],
     },
     {
         name: 'Tools',
+        icon: 'bi-tools',
         technical: ['Git', 'Docker', 'Postman'],
     },
     {
         name: 'Soft Skills',
+        icon: 'bi-person-lines-fill',
         technical: ['Teamwork', 'Self study', 'Problem solving']
     }
 ];

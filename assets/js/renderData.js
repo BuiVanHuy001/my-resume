@@ -33,7 +33,7 @@ skills.forEach((skill) => {
     $('section#skills div.row').append(
         `<div class="col-12 col-lg-6" data-aos="flip-left" data-aos-delay="300" data-aos-duration="1000">
             <div class="case-item box box--s2 box-inner">
-                <i class="font-icon bi bi-cast case-item__icon"></i>
+                <i class="font-icon bi ${skill.icon} case-item__icon"></i>
                 <div>
                     <h3 class="title title--h3">${skill.name}</h3>
                     <ul>
