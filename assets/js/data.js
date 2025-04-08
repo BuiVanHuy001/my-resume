@@ -54,22 +54,73 @@ export const skills = [
     {
         name: 'Front-End',
         icon: 'bi-cast',
-        technical: ['ReactJS (Redux, Hooks, SSG, Router, Axios)', 'Bootstrap, TailwindCSS', 'Webpack, Vite'],
+        technical: [
+            {
+                name: 'ReactJS',
+                level: 5
+            },
+            {
+                name: 'Bootstrap, TailwindCSS',
+                level: 4
+            },
+            {
+                name: 'Webpack, Vite',
+                level: 3.5
+            },
+        ],
     },
     {
         name: 'Back-End',
         icon: 'bi bi-code-slash',
-        technical: ['Laravel', 'RESTful APIs', 'WebSocket', 'MYSQL, MongoDB'],
+        technical: [
+            {
+                name: 'Laravel',
+                level: 5
+            },
+            {
+                name: 'NodeJS, ExpressJS',
+                level: 4
+            },
+            {
+                name: 'DotNet Core',
+                level: 2.5
+            },
+        ],
     },
     {
         name: 'Tools',
         icon: 'bi-tools',
-        technical: ['Git', 'Docker', 'Postman'],
+        technical: [
+            {
+                name: 'Git,',
+                level: 5
+            },
+            {
+                name: 'Postman',
+                level: 4.5
+            },
+            {
+                name: 'Docker',
+                level: 2.5
+            }]
     },
     {
         name: 'Soft Skills',
         icon: 'bi-person-lines-fill',
-        technical: ['Teamwork', 'Self study', 'Problem solving']
+        technical: [
+            {
+                name: 'Teamwork',
+                level: 5
+            },
+            {
+                name: 'Self study',
+                level: 4.5
+            },
+            {
+                name: 'Problem solving',
+                level: 4.5
+            }
+        ]
     }
 ];
 

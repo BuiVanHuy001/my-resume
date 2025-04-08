@@ -1,10 +1,8 @@
-import { basicInfo, aboutMe, skills, educations, certifications, projects, testimonials } from './data.js';
+import {basicInfo, aboutMe, skills, educations, certifications, projects, testimonials} from './data.js';
 
 $('h3.sidebar__name').text(basicInfo.name);
 $('.sidebar__base-info .badge ').text(basicInfo.job);
-
 $('#avatar').attr('src', basicInfo.avatar).attr('alt', basicInfo.name);
-
 basicInfo.contact.forEach((contact) => {
     $('.details-info').append(`
         <li class="details-info__item">
@@ -16,7 +14,6 @@ basicInfo.contact.forEach((contact) => {
         </li>
     `)
 });
-
 basicInfo.socials.forEach((social) => {
     $('.sidebar__social').append(`
         <a href="${social.link}" target="_blank" class="box box--s2 icon-box">
@@ -24,27 +21,32 @@ basicInfo.socials.forEach((social) => {
         </a>
     `)
 })
-
 aboutMe.forEach((paragraph) => {
     $('section#about div').append(`<p data-aos="flip-left">${paragraph}</p>`);
 })
-
 skills.forEach((skill) => {
     $('section#skills div.row').append(
         `<div class="col-12 col-lg-6" data-aos="flip-left" data-aos-delay="300" data-aos-duration="1000">
-            <div class="case-item box box--s2 box-inner">
-                <i class="font-icon bi ${skill.icon} case-item__icon"></i>
-                <div>
-                    <h3 class="title title--h3">${skill.name}</h3>
-                    <ul>
-                        ${skill.technical.map((tech) => `<li>${tech}</li>`).join('')}
-                    </ul>
-                </div>
+        <div class="case-item box box--s2 box-inner">
+            <i class="font-icon bi ${skill.icon} case-item__icon"></i>
+            <div>
+                <h3 class="title title--h3">${skill.name}</h3>
+                <ul>
+                    ${skill.technical.map((tech) => {
+            const stars = Array.from({length: 5}, (_, i) =>
+                `<i class="bi ${i < Math.floor(tech.level) ? 'bi-star-fill font-icon' : i < tech.level ? 'bi-star-half font-icon' : 'bi-star'}"></i>`
+            ).join('');
+            return `<li class="d-flex justify-content-between align-items-center mb-1">
+                                    <div>${tech.name}</div>
+                                    <div class="icon-box">${stars}</div>
+                                </li>`;
+        }).join('')}
+                </ul>
             </div>
-        </div>`
+        </div>
+    </div>`
     )
 })
-
 educations.forEach((education) => {
     $('#education div.timeline').append(`
        <article class="timeline__item" data-aos="fade-left" data-aos-delay="200">
@@ -54,7 +56,6 @@ educations.forEach((education) => {
         </article>
     `)
 })
-
 certifications.forEach((element) => {
     $('#certificate div.timeline').append(`
        <article class="timeline__item" data-aos="fade-left" data-aos-delay="200">
@@ -64,7 +65,6 @@ certifications.forEach((element) => {
         </article>
     `)
 })
-
 projects.forEach((project) => {
     $('section#project div.row').append(`
     <div data-aos="flip-up" data-aos-delay="300" data-aos-duration="1000" class="col-12 col-md-6 col-lg-4 mb-3">
@@ -131,7 +131,6 @@ projects.forEach((project) => {
         </div>
     </div>`)
 })
-
 testimonials.forEach((testimonial) => {
     $('section#testimonials .swiper-wrapper').append(`
     <div class="swiper-slide review-item box box--s2 box-inner js-open-review">
